@@ -1,0 +1,127 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90vh;
+  width: 100vw;
+}
+.cartContainer {
+  cursor: grab;
+  display: flex;
+  margin: 8rem 0rem;
+  position: absolute;
+  top: 14%;
+  flex-direction: row;
+  height: 40vh;
+  width: 100vw;
+}
+
+.formWrapper {
+  display: flex;
+ 
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .formWrapper {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    height: 40vh;
+    position: absolute;
+    bottom: -30%;
+    left: 5%;
+  }
+  .cartContainer {
+    display: flex;
+    margin: 8rem -12rem;
+    position: absolute;
+    top: 10%;
+    flex-direction: row;
+    height: 60vh;
+    width: 100vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .formWrapper {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    height: 40vh;
+    position: absolute;
+    bottom: -30%;
+    left: 5%;
+  }
+  .cartContainer {
+    display: flex;
+    margin: 8rem -12rem;
+    position: absolute;
+    top: 10%;
+    flex-direction: row;
+    height: 60vh;
+    width: 100vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .formWrapper {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    height: 40vh;
+    position: absolute;
+    bottom: -30%;
+    left: 5%;
+  }
+  .cartContainer {
+    display: flex;
+    margin: 8rem -12rem;
+    position: absolute;
+    top: 10%;
+    flex-direction: row;
+    height: 60vh;
+    width: 100vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .formWrapper {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    height: 40vh;
+    position: absolute;
+    bottom: -30%;
+    left: 5%;
+  }
+  .cartContainer {
+    display: flex;
+    margin: 8rem -12rem;
+    flex-direction: row;
+    height: 60vh;
+    width: 100vw;
+    position: absolute;
+    top: 10%;
+  }
+}
+
+.inner-cartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.inner-formWrapper {
+  display: flex;
+  background-color: red;
+
+  justify-content: space-evenly;
+  cursor: grab;
+  align-items: center;
+  align-content: center;
+}

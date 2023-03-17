@@ -1,0 +1,97 @@
+.containersi {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+   
+}
+.formsi {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.fieldsi {
+  width: 80%;
+  display: flex;
+  margin: 0.6rem;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid var(--color-lighter-gray);
+  padding: 0.6rem;
+  border-radius: 0.25rem;
+}
+.field__labelsi {
+  color: var(--color-gray);
+  font-size: 0.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.field__inputsi {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: bold;
+  font-size: 0.8rem;
+  width: 100%;
+  color: white;
+
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+.field:focus-within {
+  border-color: #000;
+}
+
+.fieldssi {
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.fields--3si {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.submitsi {
+  background-color: #2c2c2cd6;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: block;
+  margin-top: 3rem;
+  color: #fff;
+  width: 86%;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+}
+.button:focus-visible {
+  background-color: #333;
+}
+
+.errorsi {
+  color: rgb(239, 41, 11);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  font-size: 13px;
+  margin-top: 0px;
+  width: 100%;
+  top: 43%;
+  transform: translateY(-15px);
+  opacity: 0;
+  animation: fade 150ms ease-out;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  will-change: opacity, transform;
+}

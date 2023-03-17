@@ -1,0 +1,217 @@
+.bag {
+  position: relative;
+
+  transform: 1s;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 25px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  width: 300px;
+  height: 300px;
+  margin: 0px 234px;
+}
+
+.bag::before,
+.bag::after {
+  position: absolute;
+  content: "";
+}
+
+.bag::after {
+  height: 90px;
+  width: 200px;
+  border: 6px solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-radius: 100px 100px 0 0;
+  border-bottom: #555555;
+  top: -90px;
+  left: 48px;
+}
+
+.bag .cart_image {
+  position: relative;
+  padding: 20px 0px;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+.bag .cart_image:hover {
+  transform: scale(1.2);
+  transition: ease-in 1s;
+  transition: ease-out 1s;
+}
+.bag .rope {
+  position: absolute;
+  transform: rotateY(180deg);
+
+  opacity: 0.3;
+  bottom: -28%;
+  left: 22%;
+}
+
+.card-price {
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 250px;
+  height: 38px;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-border-radius: 3px 4px 4px 3px;
+  -moz-border-radius: 3px 4px 4px 3px;
+  border-radius: 3px 4px 4px 3px;
+
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+
+  /* This makes room for the triangle */
+  margin-left: 19px;
+
+  position: absolute;
+  bottom: 134%;
+  left: 105%;
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 10px 0 10px;
+}
+
+.thespan {
+  padding: 3px;
+  border-bottom: 1px solid white;
+}
+/* Makes the triangle */
+.card-price:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -19px;
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-bottom: 19px solid transparent;
+  border-right: 19px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Makes the circle */
+.card-price:after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  left: -9px;
+  top: 17px;
+}
+
+.line-through {
+  border: 1px solid;
+  color: rgba(255, 255, 255, 0.3);
+  height: 40px;
+  position: absolute;
+  top: 86%;
+  left: 50%;
+}
+
+.ic {
+  color: #f3f6fb;
+  font-size: 24px;
+}
+
+.line-through {
+  border: 1px solid;
+  color: rgba(255, 255, 255, 0.3);
+  height: 80px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+}
+
+.remove_btn {
+  position: fixed;
+  top: 75%;
+  right: 8%;
+  border: 2px solid;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+  width: 100px;
+  height: 38px;
+}
+
+.remove_btn:hover {
+  color: rgb(250, 86, 86);
+  transform: scale(1.1);
+}
+
+.value-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  margin: 0px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  position: fixed;
+  top: 77%;
+  left: 8%;
+  border-radius: 12px;
+}
+
+.detail-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  margin: 0px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  position: fixed;
+  top: 77%;
+  right: 8%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.size {
+  position: relative;
+  left: 18px;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.decrease {
+  position: relative;
+  left: 10px;
+  font-size: 18px;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #f2f6fb;
+}
+.increase {
+  position: relative;
+  right: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #f2f6fb;
+}
+
+.number {
+  color: #fff;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 20px;
+  padding: 10px;
+}
