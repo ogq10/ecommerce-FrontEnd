@@ -5,7 +5,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { registerUser } from "../redux/features/authSlice";
 import styled from "styled-components";
 import { BackgroundSU, Bubble } from "../components/Form/styles/Form";
-import { saveUserInfo } from "../redux/features/cartSlice";
+// import { saveUserInfo } from "../redux/features/cartSlice";
 import "./signup.css";
 
 export const LogoContainer = styled.div`
@@ -50,7 +50,7 @@ export default function SignUp() {
     e.preventDefault();
 
     dispatch(registerUser(user));
-    dispatch(saveUserInfo(user));
+    // dispatch(saveUserInfo(user));
   };
 
   return (
