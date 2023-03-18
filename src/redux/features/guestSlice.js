@@ -17,7 +17,7 @@ export const registerGuest = createAsyncThunk(
   async (values, { rejectWithValue }) => {
     try {
       const token = await axios.post(
-        "https://officialecomm.herokuapp.com/api/auth/registerGuest",
+        "https://makadsaapi.onrender.com/api/auth/registerGuest",
         {
           email: values.email,
         }

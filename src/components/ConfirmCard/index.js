@@ -78,7 +78,7 @@ export default function ConfirmCard({ data }) {
     if (data) {
       async function getPI() {
         const res = await axios.get(
-          `http://localhost:5000/api/stripe/payment_methods/${pid}`
+          `https://makadsaapi.onrender.com/api/stripe/payment_methods/${pid}`
         );
         setPIData(res.data.paymentMethodData);
         console.log("PI DATA", PIData);

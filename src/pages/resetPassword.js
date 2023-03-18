@@ -27,7 +27,7 @@ export default function ResetPassword() {
 
     const response = await axios
       .post(
-        `http://localhost:5000/api/auth/reset-password/${id}/${token}`,
+        `https://makadsaapi.onrender.com/api/auth/reset-password/${id}/${token}`,
         newPassword,
         {
           params: {

@@ -10,7 +10,7 @@ export const createOrder = createAsyncThunk(
   "order/createOrder",
   async (cart, { rejectWithValue }) => {
     try {
-      const res = await axios.post("https://officialecomm.herokuapp.com/api/orders/", {
+      const res = await axios.post("https://makadsaapi.onrender.com/api/orders/", {
         order: cart,
       });
 
@@ -28,7 +28,7 @@ export const createOrderGuest = createAsyncThunk(
   "order/createOrder",
   async (cart, { rejectWithValue }) => {
     try {
-      const res = await axios.post("https://officialecomm.herokuapp.com/orders/guest", {
+      const res = await axios.post("https://makadsaapi.onrender.com/orders/guest", {
         order: cart,
       });
 

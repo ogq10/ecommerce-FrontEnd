@@ -149,7 +149,7 @@ export default function SplitForm() {
     if (cart.cartItems.length >= 1) {
       async function getClientSecret() {
         const res = await axios.post(
-          "http://localhost:5000/api/stripe/create-payment-intent",
+          "https://makadsaapi.onrender.com/api/stripe/create-payment-intent",
           {
             amount: cart.cartTotalAmount.toFixed(2) * 100,
             currency: "USD",

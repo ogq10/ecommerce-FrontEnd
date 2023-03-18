@@ -47,7 +47,7 @@ export default function Orders() {
   useEffect(() => {
     async function getOrders() {
       const res = await axios.get(
-        `http://localhost:5000/api/users/${auth._id}/orders`
+        `https://makadsaapi.onrender.com/api/users/${auth._id}/orders`
       );
       setOrders(res.data);
     }

@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const stripeApi = createApi({
   reducerPath: "stripe",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://officialecomm.herokuapp.com/api" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://makadsaapi.onrender.com/api" }),
 
   endpoints: (builder) => ({
     getPIbyID: builder.query({

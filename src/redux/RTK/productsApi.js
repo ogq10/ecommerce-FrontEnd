@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const productsApi = createApi({
   reducerPath: "products",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://officialecomm.herokuapp.com/api" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://makadsaapi.onrender.com/api" }),
 
   endpoints: (builder) => ({
     getAllProducts: builder.query({

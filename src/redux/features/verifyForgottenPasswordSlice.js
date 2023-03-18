@@ -17,7 +17,7 @@ export const forgotPassword = createAsyncThunk(
   async (values, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "https://officialecomm.herokuapp.com/api/auth/forgot-password",
+        "https://makadsaapi.onrender.com/api/auth/forgot-password",
         {
           email: values.email,
         }
@@ -36,7 +36,7 @@ export const resetProfile = createAsyncThunk(
     try {
       const ttoken = localStorage.getItem("token");
       const response = await axios.put(
-        "https://officialecomm.herokuapp.com/api/users/profile",
+        "https://makadsaapi.onrender.com/api/users/profile",
 
         {
           email: values.newEmail,
