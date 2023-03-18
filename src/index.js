@@ -13,7 +13,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { persistStore } from "redux-persist";
 import { disableReactDevTools } from '@fvilers/disable-react-devtools'
 
-if (process.env.NODE_ENV === 'production') disableReactDevTools()
+// if (process.env.NODE_ENV === 'production') disableReactDevTools()
 let persistor = persistStore(store);
 
 const stripePromise = loadStripe(
