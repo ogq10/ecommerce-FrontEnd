@@ -27,8 +27,7 @@ export const registerUser = createAsyncThunk(
           email: values.email,
           password: values.password,
           confirmPassword: values.confirmPassword,
-        },
-        { withCredentials: true }
+        }
       );
       localStorage.setItem("token", token.data);
       return token.data; //adds to action.payload
@@ -46,8 +45,7 @@ export const loginUser = createAsyncThunk(
       const token = await axios.post("https://makadsaapi.onrender.com/api/auth/login", {
         email: values.email,
         password: values.password,
-      },
-        { withCredentials: true });
+      });
       localStorage.setItem("token", token.data);
       return token.data; //adds to action.payload
     } catch (error) {
