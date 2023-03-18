@@ -21,13 +21,14 @@ export const registerUser = createAsyncThunk(
   async (values, { rejectWithValue }) => {
     try {
       const token = await axios.post(
-        "/api/auth/register",
+        "https://makadsaapi.onrender.com/api/auth/register",
         {
           fullName: values.fullName,
           email: values.email,
           password: values.password,
           confirmPassword: values.confirmPassword,
-        }
+        },
+        { withCredentials: true }
       );
       localStorage.setItem("token", token.data);
       return token.data; //adds to action.payload
@@ -42,10 +43,11 @@ export const loginUser = createAsyncThunk(
   "auth/loginUser",
   async (values, { rejectWithValue }) => {
     try {
-      const token = await axios.post("/api/auth/login", {
+      const token = await axios.post("https://makadsaapi.onrender.com/api/auth/login", {
         email: values.email,
         password: values.password,
-      });
+      },
+        { withCredentials: true });
       localStorage.setItem("token", token.data);
       return token.data; //adds to action.payload
     } catch (error) {
